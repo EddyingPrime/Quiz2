@@ -22,15 +22,16 @@ function findProfitStats(data) {
   let lowestProfitProduct = data[0];
   let nearestToZeroProduct = data[0];
 
-  for (let n = 1; n < data.length; n++) {
+  for (let n = 1; n < data.length; n++) // top product
+  {
     if (data[n].profit > highestProfitProduct.profit) {
       highestProfitProduct = data[n];
     }
-
+    // lowest product
     if (data[n].profit < lowestProfitProduct.profit) {
       lowestProfitProduct = data[n];
     }
-
+    // zero profit product product
     if (Math.abs(data[n].profit) < Math.abs(nearestToZeroProduct.profit)) {
       nearestToZeroProduct = data[n];
     }
