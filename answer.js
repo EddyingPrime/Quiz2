@@ -15,7 +15,7 @@ console.log("Product with Nearest to Zero Profit:", result.nearestToZeroProfit);
 
 function findProfitStats(data) {
   if (data.length === 0) {
-    return "No data available.";
+    return "No data";
   }
 
   let highestProfitProduct = data[0];
